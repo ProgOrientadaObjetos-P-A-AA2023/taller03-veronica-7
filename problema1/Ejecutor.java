@@ -26,7 +26,7 @@ public class Ejecutor {
         tierra.establecerAncho(30.15);
         tierra.establecerValorMetroCuadrado(metroCuadrado);
         
-        //Se hace la llamada de los metodos.
+        //Se hace la llamada de las funciones.
         tierra.calcularArea();
         
         //Se presenta.
@@ -38,7 +38,7 @@ public class Ejecutor {
                 ,tierra.obtenerLargo(), tierra.obtenerAncho(), 
                 tierra.obtenerArea(), tierra.obtenerValorMetroCuadrado());
         
-        //Se multiplica el Área por el precio del metro cuadrado y se presenta.
+        //Se multiplica el Ã¡rea por el precio del metro cuadrado y se presenta.
         costoTerreno = 
                 tierra.obtenerArea()*tierra.obtenerValorMetroCuadrado();
         System.out.printf("-> El costo total por el terreno es de: $%.2f\n", 
@@ -62,7 +62,7 @@ public class Ejecutor {
                 ,tierra2.obtenerLargo(), tierra2.obtenerAncho(), 
                 tierra2.obtenerArea(), tierra2.obtenerValorMetroCuadrado());
         
-        //Se multiplica el Área por el precio del metro cuadrado y se presenta.
+        //Se multiplica el Ã¡rea por el precio del metro cuadrado y se presenta.
         costoTerreno = 
                 tierra2.obtenerArea()*tierra2.obtenerValorMetroCuadrado();
         System.out.printf("-> El costo total por el terreno es de: $%.2f\n", 

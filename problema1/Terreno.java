@@ -52,7 +52,7 @@ public class Terreno {
        return costoTerreno;
      }
      
-     public double obtenerArea(){
+    public double obtenerArea(){
          return area;
      }
     

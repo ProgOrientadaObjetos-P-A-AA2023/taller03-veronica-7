@@ -21,7 +21,7 @@ public class Ejecutor {
         //Establecer los valores de los atributos del primer objeto.
         tiempo.establecerHoras(48.20);
         
-        //Se llama a los metodos.
+        //Se hace el llamado de las funciones.
         tiempo.sacarMinutos();
         tiempo.sacarSegundos();
         tiempo.sacarDias();

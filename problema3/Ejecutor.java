@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package equivalentehoras;
+package intitutoseducativos;
 
 /**
  *
@@ -15,41 +15,64 @@ public class Ejecutor {
      */
     public static void main(String[] args) {
         //Crear dos objetos.
-        EquivalenteHoras tiempo = new EquivalenteHoras();
-        EquivalenteHoras tiempo2 = new EquivalenteHoras();
+        InstitutosEducativos instituto = new InstitutosEducativos();
+        InstitutosEducativos instituto2 = new InstitutosEducativos();
         
         //Establecer los valores de los atributos del primer objeto.
-        tiempo.establecerHoras(48.20);
+        instituto.establecerNombre("La Dolorosa");
+        instituto.establecerTipoInstituto("Fiscomisional");
+        instituto.establecerNumeroAlumnos(2509);
+        instituto.establecerNumeroDocentes(55);
+        instituto.establecerNumeroSedes(1);
+        instituto.establecerGastosAlumnos(225.10);
         
-        //Se llama a los metodos.
-        tiempo.sacarMinutos();
-        tiempo.sacarSegundos();
-        tiempo.sacarDias();
+        //Hacemos el llamado de la funcion para
+        //calcular el valor del presupuesto.
+        instituto.presupuestos();
         
-        //Se presenta.
-        System.out.printf("Encontrar la equivalencia de las horas en "
-                + "minutos, segundos y días.\n\n"
-                + "-> %.2f horas tienen un equivalente de %.2f minutos, "
-                + "%.2f segundos y %.2f días\n",tiempo.obtenerHoras(), 
-                tiempo.obtenerMinutos(), tiempo.obtenerSegundos(), 
-                tiempo.obtenerDias());
+        //Presentamos los valores declarados al primer objeto.
+        System.out.printf("Administración de Instituciones Educativas\n\n"
+                + "Nombre del Intituto Educativo: %s\n"
+                + "Tipo de Institutción: %s\n"
+                + "Cantidad de Alumnos de la Institución: %d\n"
+                + "Docentes de la Institución: %d\n"
+                + "Cantidad de Sedes de la Institución: %d\n"
+                + "Los gastos de los alumnos son de $%.2f\n"
+                + "El presupuesto de la Institución es de $%.2f\n", 
+                instituto.obtenerNombre(), instituto.obtenerTipoInstituto(), 
+                instituto.obtenerNumeroAlumnos(), 
+                instituto.obtenerNumeroDocentes(), 
+                instituto.obtenerNumeroSedes(), 
+                instituto.obtenerGastosAlumnos(), 
+                instituto.obtenerPresupuesto());
         
-        System.out.println("-----------------------------------------------");
+         System.out.println("-----------------------------------------------");
         
-        tiempo2.establecerHoras(15.50);
+         //Establecer los valores de los atributos del primer objeto.
+        instituto2.establecerNombre("Daniel Álvarez");
+        instituto2.establecerTipoInstituto("Fiscomisional");
+        instituto2.establecerNumeroAlumnos(1890);
+        instituto2.establecerNumeroDocentes(85);
+        instituto2.establecerNumeroSedes(1);
+        instituto2.establecerGastosAlumnos(160.52);
         
-        //Se llama a los metodos.
-        tiempo2.sacarMinutos();
-        tiempo2.sacarSegundos();
-        tiempo2.sacarDias();
+        //Hacemos el llamado del metodo para calcular el valor del presupuesto.
+        instituto2.presupuestos();
         
-        //Se presenta.
-        System.out.printf("Encontrar la equivalencia de las horas en "
-                + "minutos, segundos y días.\n\n"
-                + "-> %.2f horas tienen un equivalente de %.2f minutos, "
-                + "%.2f segundos y %.2f días\n",tiempo2.obtenerHoras(), 
-                tiempo2.obtenerMinutos(), tiempo2.obtenerSegundos(), 
-                tiempo2.obtenerDias());
+        //Presentamos los valores declarados al primer objeto.
+        System.out.printf("Nombre del Intituto Educativo: %s\n"
+                + "Tipo de Institutción: %s\n"
+                + "Cantidad de Alumnos de la Institución: %d\n"
+                + "Docentes de la Institución: %d\n"
+                + "Cantidad de Sedes de la Institución: %d\n"
+                + "Los gastos de los alumnos son de $%.2f\n"
+                + "El presupuesto de la Institución es de $%.2f\n", 
+                instituto2.obtenerNombre(), instituto.obtenerTipoInstituto(), 
+                instituto2.obtenerNumeroAlumnos(), 
+                instituto2.obtenerNumeroDocentes(), 
+                instituto2.obtenerNumeroSedes(), 
+                instituto2.obtenerGastosAlumnos(), 
+                instituto2.obtenerPresupuesto());
     }
     
 }
